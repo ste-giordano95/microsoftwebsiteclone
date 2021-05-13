@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 
 /* INIZIO HEADER */
 header {
@@ -65,8 +65,43 @@ section {
   width: 90%;
   margin: 0 auto;
   height: 400px;
-  background: red;
-  border: 1px solid black;
+}
+
+.centered-title {
+  position: absolute;
+  top: 25%;
+  left: 75px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.centered-p {
+  position: absolute;
+  top: 35%;
+  left: 75px;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.buy-button {
+  position: absolute;
+  top: 45%;
+  left: 75px;
+  padding: 8px 20px 8px 20px;
+  color: #fff;
+  background: #000;
+  border: 2px solid transparent;
+  font-weight: 700;
+  text-align: center;
+}
+
+.buy-button>span:hover {
+  border-bottom: 2px solid white;
+
+}
+
+.figure {
+  width: 100%;
 }
 
 .s1 {
@@ -77,12 +112,42 @@ section {
   height: calc(66.666666vh / 1);
 }
 
+
+/* INIZIO SEZIONE SOCIAL */
+.s6 {
+  height: auto;
+  padding: 50px 0px;
+  color: rgba(0, 0, 0, .6);
+  text-align: center;
+  align-items: center;
+}
+
+.s6 span,
+figure {
+  padding-right: 20px;
+  position: relative;
+}
+
+.s6 img {
+  width: 30px;
+  height: 30px;
+}
+
+.s6 img:hover {
+  filter: contrast(80%);
+}
+
+
+/* FINE SEZIONE SOCIAL */
+
 /* FINE SECTION */
+
+
 /* INIZIO FOOTER */
 footer {
   width: 100%;
   height: 400px;
-  background: #fff;
+  background: #f0f0f0;
 }
 
 /* FINE FOOTER */
