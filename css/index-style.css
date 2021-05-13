@@ -31,7 +31,7 @@ ul>li {
   padding: 17px 18px 0px 0px;
 }
 
-a {
+header a:only-of-type {
   text-decoration: none;
   color: black;
   font-size: 13px;
@@ -48,9 +48,14 @@ li>a:hover {
   right: 0px;
 }
 
-li>button {
-  border: none;
-  background-color: white;
+li>button,
+button>span {
+  border: 0px;
+  padding-bottom: 6px;
+  background-color: transparent;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
 }
 
 button>span:hover {
