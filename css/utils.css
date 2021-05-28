@@ -29,3 +29,11 @@
 .mobile {
     display: none;
 }
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    flex-direction: column;
+}
