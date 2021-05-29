@@ -141,7 +141,7 @@ section {
 
 /* ITMS SECTION 1 */
 .s-items-container {
-    padding: 70px 0px 20px;
+    padding: 40px 0 60px 0;
     flex-wrap: wrap;
 }
 
@@ -306,12 +306,17 @@ footer {
     padding: 30px 33px;
 }
 
+.row {
+    flex-basis: 16.6%;
+}
+
 .list {
     flex-direction: column;
 }
 
 .list a {
     padding: 8px;
+    border: 1px dashed transparent;
 }
 
 .list a:hover {
@@ -320,7 +325,7 @@ footer {
 }
 
 .list a:active {
-    border: 1px dashed black;
+    border-color: black;
 }
 
 .heading {
