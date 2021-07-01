@@ -1,134 +1,171 @@
 /* Medium devices (tablets, less than 992px)*/
-@media (max-width: 1300.00px) {
-    .desktop {
-        display: none;
-    }
+@media (max-width: 1300px) {
+  .desktop {
+    display: none;
+  }
 
-    .mobile {
-        display: none;
-    }
+  .mobile {
+    display: none;
+  }
 
-    .tablet {
-        display: block;
-    }
+  .tablet {
+    display: block;
+  }
 
-    .nav {
-        width: 95vw;
+  .nav {
+    width: 95vw;
+  }
 
-    }
+  .trailing i {
+    padding: 0 1px 0 1px;
+  }
 
-    .trailing i {
-        padding: 0 1px 0 1px;
-    }
+  section {
+    /*width: 95vw;*/
+  }
 
-    section {
-        width: 95vw;
-    }
+  .s2 {
+    flex-wrap: wrap;
+  }
+  .s2 section {
+    flex-basis: 45%;
+  }
 
-    .s2 section {
-        flex-basis: 45%;
-    }
-
-    .s-article section {
-        flex-basis: 20%;
-        padding-bottom: 30px;
-    }
-
+  .s-article section {
+    flex-basis: 20%;
+    padding-bottom: 30px;
+  }
+  .s-items-container {
+    justify-content: unset;
+  }
 }
 
-@media (max-width: 988.00px) {
+@media (max-width: 988px) {
+  .hide li:nth-child(6) {
+    display: none;
+  }
 
-    .hide li:nth-child(6) {
+  .hide1 {
+    display: none !important;
+  }
 
-        display: none;
+  .row {
+    flex-basis: 30%;
+    padding-bottom: 30px;
+  }
 
-    }
-
-    .hide1 {
-        display: none !important;
-    }
-
-    .row {
-        flex-basis: 30%;
-        padding-bottom: 30px;
-    }
-
-    .s-article section {
-        flex-basis: 20%;
-        padding-bottom: 30px;
-    }
+  .s-article section {
+    flex-basis: 20%;
+    padding-bottom: 30px;
+  }
 }
 
-@media (max-width: 928.00px) {
+@media (max-width: 928px) {
+  .hide li:nth-child(5) {
+    display: none;
+  }
 
-    .hide li:nth-child(5) {
-        display: none;
-
-    }
-
-    .s-article section {
-        flex-basis: 45%;
-        padding-bottom: 30px;
-    }
+  .s-article section {
+    flex-basis: 45%;
+    padding-bottom: 30px;
+  }
 }
 
-@media (max-width: 881.00px) {
+@media (max-width: 881px) {
+  .hide li:nth-child(4) {
+    display: none;
+  }
 
-    .hide li:nth-child(4) {
-        display: none;
+  .s-items li {
+    flex-basis: 45%;
+  }
 
-    }
-
-    .s-items li {
-        flex-basis: 45%;
-    }
-
-    .s-article section {
-        flex-basis: 45%;
-        padding-bottom: 30px;
-    }
+  .s-article section {
+    flex-basis: 45%;
+    padding-bottom: 30px;
+  }
 }
 
 /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 768.00px) {
-    .desktop {
-        display: none;
-    }
+@media (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
 
-    .mobile {
-        display: block;
-    }
+  .mobile {
+    display: block;
+  }
 
-    .tablet {
-        display: none;
-    }
+  .tablet {
+    display: none;
+  }
 
-    .nav {
-        width: 99vw;
-    }
+  .nav {
+    width: 99vw;
+  }
 
-    section {
-        width: 99vw;
-    }
+  section {
+    /*width: 99vw;*/
+  }
 
-    .row {
-        flex-basis: 100%;
-        padding: 0 0 20px 0px;
-    }
+  .row {
+    flex-basis: 100%;
+    padding: 0 0 20px 0px;
+  }
 
-    .s2 section {
-        flex-basis: 100%;
-    }
+  .s2 section {
+    flex-basis: 100%;
+  }
+  .s-image {
+    background-color: #e6e6e6;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .s-image img {
+    width: 100vw;
+  }
+  .s-image div {
+    position: static;
+    width: 80%;
+    margin: 50px 0;
+    text-align: center;
+  }
+  .s-image div h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  .s-image div p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .s-items-container {
+    justify-content: flex-start;
+    margin: 30px;
+  }
+  ul.s-items {
+    flex-direction: column;
+    width: 100%;
+  }
+  ul.s-items li {
+    flex-direction: row;
+    flex-basis: 100%;
+    padding-bottom: 30px;
+    width: 100%;
+  }
+  ul.s-items li a {
+    margin: 0 20px;
+  }
+  .icon-shop {
+    max-width: 20px;
+  }
 
-    .s-items li {
-        flex-basis: 100%;
-        padding-bottom: 30px;
-    }
-
-    .s-article section {
-        flex-basis: 99%;
-        padding-bottom: 30px;
-    }
+  .s-article section {
+    flex-basis: 99%;
+    padding-bottom: 30px;
+  }
 }
 
 /* Large devices (desktops, less than 1200px)
