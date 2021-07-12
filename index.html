@@ -17,37 +17,44 @@
 
 </head>
 
-<body>
-    <header class="desktop">
+<body class="d-flex flex-column">
+<div class="container">
+    <header>
 
-        <div class="navbar-container d-flex justify-content-space-center">
+        <div class="navbar-container ">
             <nav class="d-flex nav align-items-center justify-content-space-between">
+                <div class="burger-menu">
+                    <ul>
+                        <li><i class="fas fa-bars"></i></li>
+                        <li><a href="#"><span class="hide">Cerca</span><i class="fas fa-search"></i></a></li>
+                    </ul>
+                </div>
                 <div class="leading d-flex align-items-center">
                     <div class="logo"><a href="index.html"><img src="assets/logo.png" alt=""></a></div>
-                    <ul>
+                    <ul class="menu-list">
                         <li><a href="#">Microsoft 365</a></li>
                         <li><a href="/office.html">Office</a></li>
                         <li><a href="#">Windows</a></li>
-                        <li><a href="#">Surface</a></li>
-                        <li><a href="#">Xbox</a></li>
-                        <li><a href="#">Offerte</a></li>
-                        <li><a href="#">Supporto tecnico</a></li>
+                        <li><a href="#" class="hide">Surface</a></li>
+                        <li><a href="#" class="hide">Xbox</a></li>
+                        <li><a href="#" class="hide">Offerte</a></li>
+                        <li><a href="#" class="hide">Supporto tecnico</a></li>
                     </ul>
                 </div>
 
                 <div class="trailing">
                     <ul>
                         <li><a href="#">Tutti i siti Microsoft</a></li>
-                        <li><a href="#">Cerca<i class="fas fa-search"></i></a></li>
-                        <li><a href="#">Carrello<i class="fas fa-shopping-cart"></i></a></li>
-                        <li><a href="#">Accedi<i class="fas fa-sign-in-alt"></i></a></li>
+                        <li><a href="#"><span class="hide">Cerca</span><i class="fas fa-search desktop"></i></a></li>
+                        <li><a href="#"><span class="hide">Carrello</span><i class="fas fa-shopping-cart"></i></a></li>
+                        <li><a href="#"><span class="hide">Accedi</span><i class="fas fa-sign-in-alt"></i></a></li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
 
-    <header class="tablet">
+    <!-- <header class="tablet">
         <div class="navbar-container d-flex justify-content-space-center">
             <nav class="d-flex nav align-items-center justify-content-space-between">
                 <div class="leading d-flex align-items-center">
@@ -73,7 +80,7 @@
                 </div>
             </nav>
         </div>
-    </header>
+    </header> 
 
     <header class="mobile">
         <div class="navbar-container d-flex justify-content-space-center">
@@ -92,13 +99,13 @@
             </nav>
         </div>
 
-    </header>
+    </header>-->
     <main>
         <section class="s1 s-banner">
             <figure class="s-image s1-image">
                 <picture>
-                    <source media="(min-width:1024px)" srcset="assets/s1-5.png">
-                    <source media="(min-width:813px)" srcset="assets/s1-4.png">
+                    <source media="(max-width:1024px)" srcset="assets/s1-5.png">
+                    <source media="(-width:813px)" srcset="assets/s1-4.png">
                     <source media="(max-width:768px)" srcset="assets/s1-1.png">
                     <img src="assets/s1-5.png" alt="Surface Laptop 4 ">
                 </picture>
@@ -144,17 +151,18 @@
                             <a href="#">Acquista Windows 10</a>
                         </div>
                     </li>
-                    <li>
+                    <!-- <li>
                         <div class="icon-shop">
                             <img src="assets/item-5.png" alt="">
                         </div>
                         <div>
                             <a href="#">Per le Aziende</a>
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </section>
+    
 
         <section class="s2 s-article d-flex">
             <section>
@@ -189,7 +197,7 @@
 
         </section>
 
-        <section class="s3 s-banner">
+        <section class="s3 s-banner ">
             <figure class="s-image s3-image">
                 <picture>
                     <source media="(min-width:1024px)" srcset="assets/s3.png">
@@ -209,9 +217,7 @@
         <section class="article-title">
             <h2>Per le aziende</h2>
         </section>
-
-        <section class="s4 s-article d-flex flex-wrap">
-
+        <section class=" s4 s-article d-flex">     
             <section>
                 <img src="assets/s4-img1.png" alt="">
                 <h2>Offerte a tempo limitato</h2>
@@ -264,7 +270,7 @@
             </figure>
         </section>
 
-        <section class="s6 d-flex">
+        <section class="s6 article-title d-flex">
             <span>Segui Microsoft</span>
             <figure>
                 <a href="https://www.facebook.com/MicrosoftItalia/">
@@ -278,6 +284,7 @@
             </figure>
         </section>
     </main>
+</div>
     <footer>
         <nav>
             <div class="rowgroup d-flex justify-content-space-around flex-wrap">
