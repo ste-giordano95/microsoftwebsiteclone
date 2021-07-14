@@ -37,3 +37,9 @@
 .flex-column {
   flex-direction: column;
 }
+
+.boxes {
+  display: flex;
+  margin-bottom: 50px;
+  padding: 65px;
+}
