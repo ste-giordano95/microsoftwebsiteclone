@@ -1,7 +1,7 @@
-> # To fix:
+> # TODO:
 >
-> - Overflow dell'intero DOM sotto i 950px.
+> - Creare pagine "tutte" ( home completata )
 > - 
 > - 
 >
->  *Everything* is going according to **plan**.
+

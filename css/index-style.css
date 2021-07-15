@@ -50,6 +50,10 @@ li > a:hover {
   padding-bottom: 2px;
 }
 
+li > a:active {
+  border: 1px dashed black;
+}
+
 button {
   background-color: transparent;
   border: 0px;
@@ -61,9 +65,6 @@ button {
 
 .trailing i {
   padding: 0 9px 0 9px;
-}
-
-.logo {
 }
 
 .logo img {
@@ -161,20 +162,26 @@ section {
 }
 
 /* ITMS SECTION 1 */
+.carousel{
+  max-width: 1000px;
+  overflow-x: auto;
+  margin:auto;
+}
 .s-items-container {
   padding: 40px 0 60px 0;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
   /* overflow: auto; */
 }
 
 ul.s-items {
-  align-items: baseline;
-  justify-content: center;
+ /*  align-items: baseline;
+  justify-content: center; */
+  max-width: 500px;
 }
 
 ul.s-items li {
-  width: 200px;
+  min-width: 200px;
   /* padding: 0px 5px; */
   text-align: center;
   display: flex;
@@ -318,6 +325,9 @@ footer {
   font-family: "Roboto", sans-serif;
   color: #616161;
   padding: 30px 33px;
+  display: grid;
+  grid-auto-flow: column;
+  /* grid-template-columns: repeat(auto-fill, 300px); */
 }
 
 .row {
@@ -331,6 +341,7 @@ footer {
 .list a {
   padding: 8px;
   border: 1px dashed transparent;
+  line-height: 1.5;
 }
 
 .list a:hover {
@@ -356,17 +367,21 @@ footer {
 }
 
 .footlist {
+  display:flex;
   font-family: "Roboto", sans-serif;
-  padding: 5px 0px 0px 180px;
-  align-items: center;
+  padding: 10px 30px;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap:wrap;
+  margin:auto;
 }
 
 .footlist div > a {
   color: #616161;
   text-decoration: none;
   font-size: 11px;
-  margin: 0px 11px;
-  margin-left: 20px;
+  margin: 0 20px 0 0;
+  /*margin-left: 20px; */
 }
 
 .footlist a:hover {
@@ -385,21 +400,35 @@ footer {
   /* padding-left: 30px; */
 }
 
-.icon {
-  position: absolute;
+/* .icon {
+   position: absolute; 
   width: 25px;
   height: 22px;
   left: 70px;
-}
+} */
 
-.icon img {
+/* .icon img {
   width: 100%;
   height: 100%;
+} */
+
+.footlist-item {
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+  flex-wrap: wrap;
+  line-height: 1.8;
+}
+
+.footlist-item > i {
+  font-size: 24px;
+  margin-right: 10px;
+  
 }
 
 #language {
-  position: absolute;
-  left: 100px;
+  /* position: absolute;
+  left: 100px; */
   margin-top: 3.5px;
   font-family: "Roboto", sans-serif;
   color: #616161;
