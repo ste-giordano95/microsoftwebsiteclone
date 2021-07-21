@@ -1,373 +1,417 @@
 <!DOCTYPE html>
 <html lang="it" dir="ltr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microsoft - Home page ufficiale </title>
-    <meta name="description" content="Copia sito Microsoft">
-    <meta name="author" content="Gruppo3">
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microsoft - Home page ufficiale</title>
+    <meta name="description" content="Copia sito Microsoft" />
+    <meta name="author" content="Gruppo3" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
     <script src="https://kit.fontawesome.com/76482a6523.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/index-style.css">
-    <link rel="stylesheet" href="css/utils.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index-style.css" />
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
 
-</head>
-
-<body>
-    <header class="desktop">
-
-        <div class="navbar-container d-flex justify-content-space-center">
-            <nav class="d-flex nav align-items-center justify-content-space-between">
-                <div class="leading d-flex align-items-center">
-                    <div class="logo"><a href="index.html"><img src="assets/logo.png" alt=""></a></div>
-                    <ul>
-                        <li><a href="#">Microsoft 365</a></li>
-                        <li><a href="/office.html">Office</a></li>
-                        <li><a href="#">Windows</a></li>
-                        <li><a href="#">Surface</a></li>
-                        <li><a href="#">Xbox</a></li>
-                        <li><a href="#">Offerte</a></li>
-                        <li><a href="#">Supporto tecnico</a></li>
-                    </ul>
-                </div>
-
-                <div class="trailing">
-                    <ul>
-                        <li><a href="#">Tutti i siti Microsoft</a></li>
-                        <li><a href="#">Cerca<i class="fas fa-search"></i></a></li>
-                        <li><a href="#">Carrello<i class="fas fa-shopping-cart"></i></a></li>
-                        <li><a href="#">Accedi<i class="fas fa-sign-in-alt"></i></a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <header class="tablet">
-        <div class="navbar-container d-flex justify-content-space-center">
-            <nav class="d-flex nav align-items-center justify-content-space-between">
-                <div class="leading d-flex align-items-center">
-                    <div class="logo"><a href="index.html"><img src="assets/logo.png" alt=""></a></div>
-                    <ul class="hide">
-                        <li><a href="#">Microsoft 365</a></li>
-                        <li><a href="/office.html">Office</a></li>
-                        <li><a href="#">Windows</a></li>
-                        <li><a href="#">Surface</a></li>
-                        <li><a href="#">Xbox</a></li>
-                        <li><a href="#">Offerte</a></li>
-                        <li><a href="#">Altro</a></li>
-                    </ul>
-                </div>
-
-                <div class="trailing">
-                    <ul>
-                        <li><a href="#">Tutti i siti Microsoft</a></li>
-                        <li><i class="fas fa-search"></i></li>
-                        <li><i class="fas fa-shopping-cart"></i></li>
-                        <li><i class="fas fa-sign-in-alt"></i></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <header class="mobile">
-        <div class="navbar-container d-flex justify-content-space-center">
-            <nav class="d-flex nav align-items-center justify-content-space-between">
-                <div class="leading">
-                    <button><i class="fas fa-bars"></i></button>
-                    <button><i class="fas fa-search"></i></button>
-                </div>
-                <div class="logo"><a href="index.html"><img src="assets/logo.png" alt=""></a></div>
-
-
-                <div class="trailing">
-                    <button><i class="fas fa-shopping-cart"></i></button>
-                    <button><i class="fas fa-sign-in-alt"></i></button>
-                </div>
-            </nav>
-        </div>
-
-    </header>
-    <main>
-        <section class="s1 s-banner">
-            <figure class="s-image s1-image">
-                <picture>
-                    <source media="(min-width:1024px)" srcset="assets/s1-5.png">
-                    <source media="(min-width:813px)" srcset="assets/s1-4.png">
-                    <source media="(max-width:812px)" srcset="assets/s1-1.png">
-                    <img src="assets/s1-5.png" alt="Surface Laptop 4 ">
-                </picture>
-                <div>
-                    <h1>Offerta a tempo limitato</h1>
-                    <p>Acquista il nuovo Surface Laptop 4 entro il 18 maggio e puoi ricevere fino a 750€ restituendo un dispositivo idoneo</p>
-                    <button type="button" name="button"><a href="#">Acquista ora </a> </button>
-                </div>
-            </figure>
-        </section>
-        <section class="s-items-container d-flex justify-content-space-center align-items-center">
-
-            <ul class="s-items d-flex flex-wrap">
+  <body class="d-flex flex-column">
+    <div class="container">
+      <!-- NavBar -->
+      <header>
+        <div class="navbar-container">
+          <nav class="d-flex nav align-items-center justify-content-space-between">
+            <div class="burger-menu">
+              <ul>
                 <li>
-                    <img src="assets/item-1.png" alt="">
-                    <a href="#">Scegli la tua <br> versione di <br> Microsoft 365</a>
+                    <i class="fas fa-bars"></i>
                 </li>
                 <li>
-                    <img src="assets/item-2.png" alt="">
-                    <a href="#">Acquista i <br> prodotti Surface</a>
+                  <a href="#"><span class="hide">Cerca</span><i class="fas fa-search"></i></a>
                 </li>
-                <li>
-                    <img src="assets/item-3.png" alt="">
-                    <a href="#">Acquista console <br> e giochi per Xbox</a>
-                </li>
-                <li>
-                    <img src="assets/item-4.png" alt="">
-                    <a href="#">Acquista <br> Windows 10</a>
-                </li>
-                <li class="hide1">
-                    <img src="assets/item-5.png" alt="">
-                    <a href="#">Per le Aziende</a>
-                </li>
-            </ul>
-
-        </section>
-
-        <section class="s2 s-article d-flex flex-wrap">
-            <section>
-                <img src="assets/s2-img1.png" alt="">
-                <h2>Offerte speciali gamma Surface</h2>
-                <p>Scopri le nostre imperdibili offerte del mese di maggio su Surface Laptop 3 e Surface Book 3. Acquista il pacchetto per ottenere ulteriori vantaggi su Microsoft 365 e gli accessori abbinati. Affrettati!</p>
-                <a href="#">Acquista Surgace Laptop 3</a>
-                <a href="#">Acquista Surgace Book 3</a>
-            </section>
-
-            <section>
-                <img src="assets/s2-img2.png" alt="">
-                <h2>Microsoft 365</h2>
-                <p>App Office premium, spazio di archiviazione nel cloud aggiuntivo, sicurezza avanzata e altro ancora, tutto in un unico abbonamento conveniente.</p>
-                <a href="#">Per un massimo di 6 persone</a>
-                <a href="#">Per 1 persona</a>
-            </section>
-
-            <section>
-                <img src="assets/s2-img3.png" alt="">
-                <h2>Xbox Serie S</h2>
-                <p>Prestazioni di nuova generazione nella console Xbox più piccola di sempre.</p>
-                <a href="#">Acquista ora</a>
-            </section>
-
-            <section>
-                <img src="assets/s2-img4.png" alt="">
-                <h2>Xbox Game Pass Ultimate</h2>
-                <p>Xbox Live Gold e oltre 100 giochi per console e PC di alta qualità. Divertiti con gli amici e scopri il tuo prossimo gioco preferito.</p>
-                <a href="#">Abbonati ora</a>
-            </section>
-
-        </section>
-
-        <section class="s3 s-banner">
-            <figure class="s-image s3-image">
-                <picture>
-                    <source media="(min-width:1024px)" srcset="assets/s3.png">
-                    <source media="(min-width:813px)" srcset="assets/s3-2.png">
-                    <source media="(max-width:812px)" srcset="assets/s3-1.png">
-                    <img src="assets/s3.png" alt="Surface Pro 7">
-                </picture>
-                <div>
-                    <h1>Pacchetto Surface Pro 7: risparmia fino a 784,99€</h1>
-                    <p>Acquista subito il tuo nuovo dispositivo con processore i5 o i7 e una cover con tasti del colore che preferisci. Inoltre puoi ottenere ulteriori vantaggi anche sull'abbonamento a Microsoft 365.</p>
-                    <button type="button" name="button"><a href="#">Acquista il pacchetto </a> </button>
-                    <button class="transparent-button" type="button" name="button"><a href="#">Acquista Surface Pro 7</a> </button>
-                </div>
-            </figure>
-        </section>
-
-        <section class="article-title">
-            <h2>Per le aziende</h2>
-        </section>
-
-        <section class="s4 s-article d-flex flex-wrap">
-
-            <section>
-                <img src="assets/s4-img1.png" alt="">
-                <h2>Offerte a tempo limitato</h2>
-                <p>Acquista il nuovo Surface Laptop 4 per le aziende entro il 18 maggio e puoi ricevere fino a 750€ restituendo un dispositivo idoneo.</p>
-                <a href="#">Acquista ora</a>
-            </section>
-
-            <section>
-                <img src="assets/s4-img2.png" alt="">
-                <h2>Microsoft team</h2>
-                <p>Chatta, incontra, chiama e collabora.</p>
-                <a href="#">Scopri di più</a>
-            </section>
-
-            <section>
-                <img src="assets/s4-img3.png" alt="">
-                <h2>Nuovo Surface Headphones 2+ per le aziende</h2>
-                <p>Cuffie certificate per Microsoft Teams, con 13 livelli di cancellazione attiva del rumore per ridurre le distrazioni.</p>
-                <a href="#">Acquista ora</a>
-            </section>
-
-            <section>
-                <img src="assets/s4-img4.png" alt="">
-                <h2>Windows 10 Enterprise</h2>
-                <p>Scarica la versione di prova gratuita di 90 giorni per i professionisti IT.</p>
-                <a href="#">Scarica subito</a>
-            </section>
-        </section>
-
-        <section class="s5 s-banner">
-            <figure class="s-image s5-image">
-                <picture>
-                    <!-- <source media="(min-width:1366px)" srcset="assets/s3.png">
-                            <source media="(min-width:813px)" srcset="assets/s3-2.png">
-                            <source media="(max-width:812px)" srcset="assets/s3-1.png">
-                            <img src="assets/s3.png" alt="Surface Pro 7"> -->
-                    <source media="(min-width:1024px)" srcset="assets/s5.png">
-                    <source media="(min-width:813px)" srcset="assets/s5-1.png">
-                    <source media="(max-width:812px)" srcset="assets/s5-2.png">
-                    <img src="assets/s5.png" alt="Descrizione">
-                    <!-- <source media="(max-width:1366px)" srcset="assets/s5-1.png">
-                                  <img src="assets/s5.png" alt="Descrizione"> -->
-                </picture>
-
-                <div>
-                    <h1>Brevi video su grandi temi</h1>
-                    <p>Il percorso verso una Trasformaizone Sostenibile</p>
-                    <button type="button" name="button"><a href="#">Guarda ora </a> </button>
-                </div>
-            </figure>
-        </section>
-
-        <section class="s6 d-flex">
-            <span>Segui Microsoft</span>
-            <figure>
-                <a href="https://www.facebook.com/MicrosoftItalia/">
-                    <img src="assets/facebook-icon.png" alt="Facebook Logo">
-                </a>
-            </figure>
-            <figure>
-                <a href="https://twitter.com/microsoftitalia">
-                    <img src="assets/twitter-icon.png" alt="Twitter Logo">
-                </a>
-            </figure>
-        </section>
-    </main>
-    <footer>
-        <nav>
-            <div class="rowgroup d-flex justify-content-space-around flex-wrap">
-                <div class="row">
-                    <div class="heading">
-                        Le novità
-                    </div>
-                    <div class="list d-flex">
-                        <a href="#">Surface Laptop 4</a>
-                        <a href="#">Surface Laptop Go</a>
-                        <a href="#">Surface Go 2</a>
-                        <a href="#">Surface Pro X</a>
-                        <a href="#">Surface Book 3</a>
-                        <a href="#">Microsoft 365</a>
-                        <a href="#">App di Windows 10</a>
-                        <a href="#">HoloLens 2</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="heading">
-                        Microsoft Store
-                    </div>
-
-                    <div class="list d-flex">
-                        <a href="#">Profilo account</a>
-                        <a href="#">Download Center</a>
-                        <a href="#">Supporto Microsoft Store</a>
-                        <a href="#">Resi</a>
-                        <a href="#">Monitoraggio ordini</a>
-                        <a href="#">Riciclaggio</a>
-                        <a href="#">Garanzie commerciali</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="heading">
-                        Formazione
-                    </div>
-                    <div class="list d-flex">
-                        <a href="">Office per studenti</a>
-                        <a href="">Office 365 per gli istituti di <br>formazione</a>
-                        <a href="">Offerte per studenti e genitori</a>
-                        <a href="">Microsoft Azure per il settore della <br>formazione</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="heading">
-                        Azienda
-                    </div>
-                    <div class="list d-flex">
-                        <a href="#">Azure</a>
-                        <a href="#">AppSource</a>
-                        <a href="#">Automobili</a>
-                        <a href="#">Enti pubblici</a>
-                        <a href="#">Settore sanitario</a>
-                        <a href="#">Produzione</a>
-                        <a href="#">Servizi finanziari</a>
-                        <a href="#">Commercio</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="heading">
-                        Sviluppatore
-                    </div>
-                    <div class="list d-flex">
-                        <a href="#">Microsoft Visual Studio</a>
-                        <a href="#">Windows Dev Center</a>
-                        <a href="#">Developer Center</a>
-                        <a href="#">Programma per sviluppatori <br>Microsoft</a>
-                        <a href="#">Canale 9</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="heading">
-                        Azienda
-                    </div>
-                    <div class="list d-flex">
-                        <a href="#">Opportunità di carriera</a>
-                        <a href="#">Informazioni su Microsoft</a>
-                        <a href="#">Notizie aziendali</a>
-                        <a href="#">Privacy in Microsoft</a>
-                        <a href="#">Investitori</a>
-                        <a href="#">Sicurezza</a>
-                    </div>
-                </div>
+              </ul>
             </div>
-        </nav>
+            <div class="leading d-flex align-items-center">
+              <div class="logo">
+                <a href="index.html"><img src="assets/logo.png" alt="" /></a>
+              </div>
+              <ul class="menu-list">
+                <li><a href="#">Microsoft 365</a></li>
+                <li><a href="/office.html">Office</a></li>
+                <li><a href="#">Windows</a></li>
+                <li><a href="#" class="hide">Surface</a></li>
+                <li><a href="#" class="hide">Xbox</a></li>
+                <li><a href="#" class="hide">Offerte</a></li>
+                <li><a href="#" class="hide">Supporto tecnico</a></li>
+              </ul>
+            </div>
 
-        <div class="footlist d-flex justify-content-space-around">
-            <nav>
-                <div>
-                    <a class="icon" href="#">
-                        <img src="assets/mondo.png" alt="globe-icon">
+            <div class="trailing">
+              <ul>
+                <li><a href="#">Tutti i siti Microsoft</a></li>
+                <li>
+                  <a href="#">
+                      <span class="hide">Cerca</span>
+                      <i class="fas fa-search desktop"></i>
                     </a>
-                    <a id="language" href="#">Italiano (Italia)</a>
+                </li>
+                <li>
+                  <a href="#">
+                      <span class="hide">Carrello</span>
+                      <i class="fas fa-shopping-cart"></i>
+                </a>
+                </li>
+                <li>
+                  <a href="#">
+                      <span class="hide">Accedi</span>
+                      <i class="fas fa-sign-in-alt"></i>
+                    </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <!-- Hero Banner -->
+        <section class="s1 s-banner">
+          <figure class="s-image s1-image">
+            <picture>
+              <source media="(max-width:539px)" srcset="assets/s1-img1.jpg" />
+              <source
+                media="(min-width:540px) and (max-width: 767px)"
+                srcset="assets/s1-img2.jpg"/>
+              <source
+                media="(min-width:768px) and (max-width:1083px)"
+                srcset="assets/s1-img3.jpg"/>
+              <source
+                media="(min-width:1083px) and (max-width:1399px)"
+                srcset="assets/s1-img4.jpg"/>
+              <source
+                media="(min-width:1400px) and (max-width:1778px)"
+                srcset="assets/s1-img5.jpg"/>
+              <source srcset="assets/s1-img6.jpg" />
+              <img src="assets/s1-img7.jpg" alt="Surface Laptop 4 " />
+            </picture>
+            <div>
+              <h1>Offerta a tempo limitato</h1>
+              <p>
+                Acquista il nuovo Surface Laptop 4 entro il 18 maggio e puoi
+                ricevere fino a 750€ restituendo un dispositivo idoneo
+              </p>
+              <button type="button" name="button">
+                <a href="#">Acquista ora </a>
+              </button>
+            </div>
+          </figure>
+        </section>
+
+        <!-- Carousel Icons -->
+    <div class="carousel">
+        <section class="s-items-container d-flex align-items-center">
+          <div>
+            <ul class="s-items d-flex">
+              <li class="d-flex">
+                <div class="icon-shop">
+                  <img src="assets/item-1.png" alt="" />
                 </div>
                 <div>
-                    <a href="#">Riferimenti societari</a>
-                    <a href="#">Contatta Microsoft</a>
-                    <a href="#">Privacy</a>
-                    <a href="#">Gestisci i cookie</a>
-                    <a href="#">Condizioni per l'utilizzo</a>
-                    <a href="#">Marchi</a>
-                    <a href="#">Informazioni sulle inserzioni</a>
-                    <a href="#">EU Compliance DoCs</a>
-                    <div id="copy">© Microsoft 2021</div>
+                  <a href="#">Scegli la tua versione di Microsoft 365</a>
                 </div>
-            </nav>
+              </li>
+              <li>
+                <div class="icon-shop">
+                  <img src="assets/item-2.png" alt="" />
+                </div>
+                <div>
+                  <a href="#">Acquista i prodotti Surface</a>
+                </div>
+              </li>
+              <li>
+                <div class="icon-shop">
+                  <img src="assets/item-3.png" alt="" />
+                </div>
+                <div>
+                  <a href="#">Acquista console e giochi per Xbox</a>
+                </div>
+              </li>
+              <li>
+                <div class="icon-shop">
+                  <img src="assets/item-4.png" alt="" />
+                </div>
+                <div>
+                  <a href="#">Acquista Windows 10</a>
+                </div>
+              </li>
+              <li>
+                        <div class="icon-shop">
+                            <img src="assets/item-5.png" alt="">
+                        </div>
+                        <div>
+                            <a href="#">Per le Aziende</a>
+                        </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+    </div>
+
+        <!-- Grid Boxes -->
+        <section class="s2 s-article boxes">
+          <section>
+            <img src="assets/s2-img1.png" alt="" />
+            <h2>Offerte speciali gamma Surface</h2>
+            <p>
+              Scopri le nostre imperdibili offerte del mese di maggio su Surface
+              Laptop 3 e Surface Book 3. Acquista il pacchetto per ottenere
+              ulteriori vantaggi su Microsoft 365 e gli accessori abbinati.
+              Affrettati!
+            </p>
+            <a href="#">Acquista Surgace Laptop 3</a>
+            <a href="#">Acquista Surgace Book 3</a>
+          </section>
+
+          <section>
+            <img src="assets/s2-img2.png" alt="" />
+            <h2>Microsoft 365</h2>
+            <p>
+              App Office premium, spazio di archiviazione nel cloud aggiuntivo,
+              sicurezza avanzata e altro ancora, tutto in un unico abbonamento
+              conveniente.
+            </p>
+            <a href="#">Per un massimo di 6 persone</a>
+            <a href="#">Per 1 persona</a>
+          </section>
+
+          <section>
+            <img src="assets/s2-img3.png" alt="" />
+            <h2>Xbox Serie S</h2>
+            <p>
+              Prestazioni di nuova generazione nella console Xbox più piccola di
+              sempre.
+            </p>
+            <a href="#">Acquista ora</a>
+          </section>
+
+          <section>
+            <img src="assets/s2-img4.png" alt="" />
+            <h2>Xbox Game Pass Ultimate</h2>
+            <p>
+              Xbox Live Gold e oltre 100 giochi per console e PC di alta
+              qualità. Divertiti con gli amici e scopri il tuo prossimo gioco
+              preferito.
+            </p>
+            <a href="#">Abbonati ora</a>
+          </section>
+        </section>
+
+        <!-- Hero Banner -->
+        <section class="s3 s-banner">
+          <figure class="s-image s3-image">
+            <picture>
+              <source media="(min-width:1024px)" srcset="assets/s3.png" />
+              <source media="(min-width:813px)" srcset="assets/s3-2.png" />
+              <source media="(max-width:768px)" srcset="assets/s3-1.png" />
+              <img src="assets/s3.png" alt="Surface Pro 7" />
+            </picture>
+            <div>
+              <h1>Pacchetto Surface Pro 7: risparmia fino a 784,99€</h1>
+              <p>
+                Acquista subito il tuo nuovo dispositivo con processore i5 o i7
+                e una cover con tasti del colore che preferisci. Inoltre puoi
+                ottenere ulteriori vantaggi anche sull'abbonamento a Microsoft
+                365.
+              </p>
+              <button type="button" name="button">
+                <a href="#">Acquista il pacchetto </a>
+              </button>
+              <button class="transparent-button" type="button" name="button">
+                <a href="#">Acquista Surface Pro 7</a>
+              </button>
+            </div>
+          </figure>
+        </section>
+
+        <!-- Grid Boxes -->
+        <section class="article-title">
+          <h2>Per le aziende</h2>
+        </section>
+        <section class="s4 boxes">
+          <section>
+            <img src="assets/s4-img1.png" alt="" />
+            <h2>Offerte a tempo limitato</h2>
+            <p>
+              Acquista il nuovo Surface Laptop 4 per le aziende entro il 18
+              maggio e puoi ricevere fino a 750€ restituendo un dispositivo
+              idoneo.
+            </p>
+            <a href="#">Acquista ora</a>
+          </section>
+
+          <section>
+            <img src="assets/s4-img2.png" alt="" />
+            <h2>Microsoft team</h2>
+            <p>Chatta, incontra, chiama e collabora.</p>
+            <a href="#">Scopri di più</a>
+          </section>
+
+          <section>
+            <img src="assets/s4-img3.png" alt="" />
+            <h2>Nuovo Surface Headphones 2+ per le aziende</h2>
+            <p>
+              Cuffie certificate per Microsoft Teams, con 13 livelli di
+              cancellazione attiva del rumore per ridurre le distrazioni.
+            </p>
+            <a href="#">Acquista ora</a>
+          </section>
+
+          <section>
+            <img src="assets/s4-img4.png" alt="" />
+            <h2>Windows 10 Enterprise</h2>
+            <p>
+              Scarica la versione di prova gratuita di 90 giorni per i
+              professionisti IT.
+            </p>
+            <a href="#">Scarica subito</a>
+          </section>
+        </section>
+
+        <!-- Hero Banner -->
+        <!-- <section class="s5 s-banner">
+          <figure class="s-image s5-image">
+            <picture>
+              <source media="(min-width:1024px)" srcset="assets/s5.png" />
+              <source media="(min-width:813px)" srcset="assets/s5-1.png" />
+              <source media="(max-width:812px)" srcset="assets/s5-2.png" />
+              <img src="assets/s5.png" alt="Descrizione" />
+            </picture>
+
+            <div>
+              <h1>Brevi video su grandi temi</h1>
+              <p>Il percorso verso una Trasformaizone Sostenibile</p>
+              <button type="button" name="button">
+                <a href="#">Guarda ora </a>
+              </button>
+            </div>
+          </figure>
+        </section> -->
+
+        <!-- Social Links -->
+        <section class="s6 article-title d-flex">
+          <span>Segui Microsoft</span>
+          <figure>
+            <a href="https://www.facebook.com/MicrosoftItalia/">
+              <img src="assets/facebook-icon.png" alt="Facebook Logo" />
+            </a>
+          </figure>
+          <figure>
+            <a href="https://twitter.com/microsoftitalia">
+              <img src="assets/twitter-icon.png" alt="Twitter Logo" />
+            </a>
+          </figure>
+        </section>
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <nav>
+        <div class="rowgroup">
+          <div class="row">
+            <div class="heading">Le novità</div>
+            <div class="list d-flex">
+              <a href="#">Surface Laptop 4</a>
+              <a href="#">Surface Laptop Go</a>
+              <a href="#">Surface Go 2</a>
+              <a href="#">Surface Pro X</a>
+              <a href="#">Surface Book 3</a>
+              <a href="#">Microsoft 365</a>
+              <a href="#">App di Windows 10</a>
+              <a href="#">HoloLens 2</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="heading">Microsoft Store</div>
+
+            <div class="list d-flex">
+              <a href="#">Profilo account</a>
+              <a href="#">Download Center</a>
+              <a href="#">Supporto Microsoft Store</a>
+              <a href="#">Resi</a>
+              <a href="#">Monitoraggio ordini</a>
+              <a href="#">Riciclaggio</a>
+              <a href="#">Garanzie commerciali</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="heading">Formazione</div>
+            <div class="list d-flex">
+              <a href="">Office per studenti</a>
+              <a href="">Office 365 per gli istituti di <br />formazione</a>
+              <a href="">Offerte per studenti e genitori</a>
+              <a href=""
+                >Microsoft Azure per il settore della <br />formazione</a
+              >
+            </div>
+          </div>
+          <div class="row">
+            <div class="heading">Azienda</div>
+            <div class="list d-flex">
+              <a href="#">Azure</a>
+              <a href="#">AppSource</a>
+              <a href="#">Automobili</a>
+              <a href="#">Enti pubblici</a>
+              <a href="#">Settore sanitario</a>
+              <a href="#">Produzione</a>
+              <a href="#">Servizi finanziari</a>
+              <a href="#">Commercio</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="heading">Sviluppatore</div>
+            <div class="list d-flex">
+              <a href="#">Microsoft Visual Studio</a>
+              <a href="#">Windows Dev Center</a>
+              <a href="#">Developer Center</a>
+              <a href="#">Programma per sviluppatori <br />Microsoft</a>
+              <a href="#">Canale 9</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="heading">Azienda</div>
+            <div class="list d-flex">
+              <a href="#">Opportunità di carriera</a>
+              <a href="#">Informazioni su Microsoft</a>
+              <a href="#">Notizie aziendali</a>
+              <a href="#">Privacy in Microsoft</a>
+              <a href="#">Investitori</a>
+              <a href="#">Sicurezza</a>
+            </div>
+          </div>
         </div>
+      </nav>
 
+      <div class="footlist">
+        
+          <div class="footlist-item">
+            <i class="fas fa-globe-europe"></i>
+            <a id="language" href="#">Italiano (Italia)</a>
+          </div>
+
+          <div class="footlist-item">
+            <a href="#">Riferimenti societari</a>
+            <a href="#">Contatta Microsoft</a>
+            <a href="#">Privacy</a>
+            <a href="#">Gestisci i cookie</a>
+            <a href="#">Condizioni per l'utilizzo</a>
+            <a href="#">Marchi</a>
+            <a href="#">Informazioni sulle inserzioni</a>
+            <a href="#">EU Compliance DoCs</a>
+            <div id="copy">© Microsoft 2021</div>
+          </div>
+        
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
