@@ -6,9 +6,9 @@
 >
 
 > # Pages:
-> Stefano => Microsoft365 page
-> Andrea => Office
-> Chris => Windows
-> Mauro => Xbox
-> Piero => Surface
+> - Stefano => Microsoft365 page
+> - Andrea => Office
+> - Chris => Windows
+> - Mauro => Xbox
+> - Piero => Surface
 >
