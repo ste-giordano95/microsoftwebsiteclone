@@ -2,12 +2,31 @@
   margin: auto;
 }
 
+.name::before {
+  border-left: 2px solid #000;
+  height: 24px;
+  content: " ";
+  padding-left: 7px;
+}
+
+.name {
+  font-weight: 600;
+}
+
 .info {
   background-color: #0078d4;
+  font-weight: 600;
 }
 
 .full-banner {
   margin-bottom: 50px;
+}
+
+.buy {
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  padding: 4px;
 }
 
 .m365-banner {
@@ -20,5 +39,63 @@
 
 .icon-shop {
   margin-bottom: 15px;
+}
+
+.carousel {
+  overflow-x: unset;
+}
+
+.s-image div {
+  font-size: 21px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+.s-image div h1 {
+  font-weight: 600;
+  font-size: 45px;
+}
+
+.s-image div p {
+  font-weight: 600;
+}
+
+.s-image div span {
+  display: block;
+  margin-top: 20px;
+}
+
+.s-image div span a {
+  color: #0078d4;
+}
+
+.s-image button {
+  background: #0078d4;
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: white;
+  margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+  .s-image {
+    background-color: white;
+  }
+  .s-image div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .s-image button {
+    min-width: 30vw;
+  }
 }
 /*# sourceMappingURL=m365-style.css.map */

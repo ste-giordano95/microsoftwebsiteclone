@@ -2,11 +2,28 @@
 .container-m365
     margin: auto;
 
+
+.name::before 
+    border-left: 2px solid #000
+    height: 24px
+    content: " "
+    padding-left: 7px
+
+.name
+    font-weight: 600
+
 .info
    background-color: #0078d4
+   font-weight: 600
 
 .full-banner
     margin-bottom: 50px;
+
+.buy    
+    border-width: 1px
+    border-style: solid
+    border-color: black
+    padding: 4px
 
 .m365-banner
     text-align: center
@@ -20,3 +37,44 @@
 
 .icon-shop
     margin-bottom: 15px
+
+.carousel
+  overflow-x: unset
+
+.s-image 
+
+    div      
+        font-size: 21px    
+        text-align: center
+        width: 100%
+        height: auto
+
+        h1
+            font-weight: 600
+            font-size: 45px
+        p
+            font-weight: 600
+        span
+            display: block
+            margin-top: 20px
+
+            a
+                color: #0078d4
+    button
+        background: #0078d4
+        border-width: 0.5px
+        border-style: solid
+        border-color: white
+        margin-right: 30px
+     
+@media (max-width: 768px)
+    .s-image
+        background-color: white
+        div
+            display: flex
+            flex-direction: column
+            align-items: center
+        button
+            min-width: 30vw
+
+
