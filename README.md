@@ -11,7 +11,7 @@
 > - Hero Banner: fix font text
 > - Carousel Icons: add style responsive
 > - Carousel Surface: create
-> - Text Surface Banner: create
+> - ~~Text Surface Banner: create~~
 > - Grid Boxes Surface: create
 > - Panel footer: add style responsive
 > - Social Links: add style responsive
