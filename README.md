@@ -16,6 +16,12 @@
 > - Panel footer: add style responsive
 > - Social Links: add style responsive
 > - 
+
+> # TODO: m365
+>
+> - Fix header responsive
+> - Fix social links
+> - Fix minor style
  
 > # Pages:
 > - Stefano => Microsoft365 page
