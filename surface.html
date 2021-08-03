@@ -36,7 +36,9 @@
               <div class="logo">
                 <a href="index.html"><img src="assets/logo.png" alt="" /></a>
               </div>
+              <!-- <div class="bar-logo"></div> -->
               <ul class="menu-list">
+                
                 <li><a href="#">Surface</a></li>
                 <li><a href="#">Computer</a></li>
                 <li><a href="#">Computer per le aziende</a></li>
@@ -84,15 +86,15 @@
               <source media="(max-width:0px)" srcset="assets/surface-heroBanner-0.jpg" />
               <img src="assets/surface-heroBanner-img.jpg" alt="Surface Laptop 4 " />
             </picture>
-            <div>
-              <h1>Trova il tuo Surface</h1>
-              <p>
+            <div class="boxes-surface-text">
+              <h2 class="boxes-surface-heading">Trova il tuo Surface</h2>
+              <p class="boxes-surface-subheading">
                 I portatili, i 2-in-1 e gli accessori di Microsoft sono progettati in modo unico per alimentare
                 l'originalità, la creatività e la produttività.
               </p>
-              <button type="button" name="button">
-                <a href="#">Esplora</a>
-              </button>
+              <a href="#">
+                <span>ESPLORA</span>
+              </a>
             </div>
           </figure>
         </section>
@@ -158,13 +160,24 @@
         </section>
 
         <!-- Slider Surface -->
-        <section class="s2 s-article boxes">
-          <h2>Surface Laptop 3: ancora pochi pezzi!</h2>
+        <section class="s2 s-article boxes .reset">
+          <div class="slider-surface">
+            <div class="slides">
+              <div class="slide" id="slide-1">Surface Pro 7: fino a 630€ di sconto</div>
+              <div class="slide" id="slide-2">Surface Laptop 3: ancora pochi pezzi!</div>
+              <div class="slide" id="slide-3">Surface Go 2</div>
+            </div>
+            <div id="controls" class="controls">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+            </div>
+          </div>
         </section>
 
         <!-- Text Surface Banner -->
-        <section class="s3 s-banner s-surface-banner">
-          <div class="surface-banner">
+        <section class="s3 s-banner s-text-surface-banner">
+          <div class="text-surface-banner">
             <h2>Lavoro da remoto con Surface</h2>
             <p>
               Lavora al meglio nello studio, sul tavolo da cucina o sul divano. I dispositivi Surface ti offrono tutta
@@ -175,43 +188,301 @@
         </section>
 
         <!-- Grid Boxes Surface -->
-        <section class="article-title">
-          <h2>Per le aziende</h2>
-        </section>
-        <section class="s4 boxes">
-          <section>
-            <img src="assets/s4-img1.png" alt="" />
-            <h2>Offerte a tempo limitato</h2>
-            <p>
-              Acquista il nuovo Surface Laptop 4 per le aziende entro il 18 maggio e puoi ricevere fino a 750€
-              restituendo un dispositivo idoneo.
-            </p>
-            <a href="#">Acquista ora</a>
-          </section>
+        <section class="boxes-surface">
+          <div class="boxes-surface-item">
+            <div class="boxes-surface-img">
+              <picture>
+                <source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Mosic_Fall_20_LaptopG_Platinum_V1.jpg?version=23df4af4-8d12-d043-3e09-22aa04dfc415
+                  "
+                  media="(min-width:1400px)" />
+                <source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Mosic_Fall_20_LaptopG_Platinum_V2.jpg?version=c3fafbbf-b362-f42f-ce04-296f96ff5e4a
+                  "
+                  media="(min-width:1084px)" />
+                <source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Mosic_Fall_20_LaptopG_Platinum_V2.jpg?version=c3fafbbf-b362-f42f-ce04-296f96ff5e4a
+                  "
+                  media="(min-width:540px)" />
+                <source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Mosic_Fall_20_LaptopG_Platinum_V3.jpg?version=790684ce-bb48-27e7-3549-f1ad61526ffc
+                  "
+                  media="(min-width:0px)" />
+                <img
+                  src="https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Mosic_Fall_20_LaptopG_Platinum_V1.jpg?version=23df4af4-8d12-d043-3e09-22aa04dfc415"
+                  class="mscom-image x-hidden-focus"
+                  alt="Surface Laptop Go nel colore Platino visto dal lato frontale e posteriore."
+                  style="top: auto; height: 807px"
+                  width=""
+                  height=""
+              /></picture>
+            </div>
+            <div class="boxes-surface-text">
+              <h2 class="boxes-surface-heading">Surface Laptop Go</h2>
+              <p class="boxes-surface-subheading">
+                Valore eccezionale. Elegante e leggero, con touchscreen da 12,4 pollici
+              </p>
+              <a href="#">
+                <span>SCOPRI SURFACE LAPTOP GO</span>
+              </a>
+            </div>
+          </div>
 
-          <section>
-            <img src="assets/s4-img2.png" alt="" />
-            <h2>Microsoft team</h2>
-            <p>Chatta, incontra, chiama e collabora.</p>
-            <a href="#">Scopri di più</a>
-          </section>
-
-          <section>
-            <img src="assets/s4-img3.png" alt="" />
-            <h2>Nuovo Surface Headphones 2+ per le aziende</h2>
-            <p>
-              Cuffie certificate per Microsoft Teams, con 13 livelli di cancellazione attiva del rumore per ridurre le
-              distrazioni.
-            </p>
-            <a href="#">Acquista ora</a>
-          </section>
-
-          <section>
-            <img src="assets/s4-img4.png" alt="" />
-            <h2>Windows 10 Enterprise</h2>
-            <p>Scarica la versione di prova gratuita di 90 giorni per i professionisti IT.</p>
-            <a href="#">Scarica subito</a>
-          </section>
+          <div class="boxes-surface-item">
+            <div class="boxes-surface-img">
+              <picture class="c-image"
+                ><source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Mosic_Fall_20_Go_2_en-us_V1.jpg?version=45fd9288-3840-0d86-599c-77989e84ed43
+                  "
+                  media="(min-width:1400px)" />
+                <source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Mosic_Fall_20_Go_2_en-us_V2.jpg?version=a950fc18-6ad0-9471-d101-70059cb3769d
+                  "
+                  media="(min-width:1084px)" />
+                <source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Mosic_Fall_20_Go_2_en-us_V2.jpg?version=a950fc18-6ad0-9471-d101-70059cb3769d
+                  "
+                  media="(min-width:540px)" />
+                <source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Mosic_Fall_20_Go_2_en-us_V2.jpg?version=4bb1e454-a2e5-e19d-2fb6-566e37d94e3f
+                  "
+                  media="(min-width:0px)" />
+                <img
+                  src="https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Mosic_Fall_20_Go_2_en-us_V1.jpg?version=45fd9288-3840-0d86-599c-77989e84ed43"
+                  class="mscom-image"
+                  alt="Surface Go 2 nel colore Platino con una Cover con tasti, un mouse Surface Mouse e una Penna per Surface."
+                  style="top: auto; height: 807px"
+                  width=""
+                  height=""
+              /></picture>
+            </div>
+            <div class="boxes-surface-text">
+              <h2 class="boxes-surface-heading">Surface Go 2</h2>
+              <p class="boxes-surface-subheading">
+                Il modello Surface più piccolo e leggero con touchscreen da 10,5 pollici*
+              </p>
+              <a href="#">
+                <span>SCOPRI SURFACE GO</span>
+              </a>
+            </div>
+          </div>
+          <div class="boxes-surface-item">
+            <div class="boxes-surface-img">
+              <picture class="c-image"
+                ><source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Hero_20_mosaic_Book3_SingleTile_V1.jpg?version=f7a8f28a-7d43-8b2a-35e2-b9fca7693a53
+                  "
+                  media="(min-width:1400px)" />
+                <source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Hero_20_mosaic_Book3_SingleTile_V2.jpg?version=8f322e33-582d-30a2-ffaa-4ce4b60775e4
+                  "
+                  media="(min-width:1084px)" />
+                <source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Hero_20_mosaic_Book3_SingleTile_V2.jpg?version=8f322e33-582d-30a2-ffaa-4ce4b60775e4
+                  "
+                  media="(min-width:540px)" />
+                <source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Hero_20_mosaic_Book3_SingleTile_V3.jpg?version=816271ec-da9c-6294-a21a-8c418ded389a
+                  "
+                  media="(min-width:0px)" />
+                <img
+                  src="https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Hero_20_mosaic_Book3_SingleTile_V1.jpg?version=f7a8f28a-7d43-8b2a-35e2-b9fca7693a53"
+                  class="mscom-image x-hidden-focus"
+                  alt="Un computer Surface Book 3 con lo schermo staccato."
+                  style="top: auto; height: 807px"
+                  width=""
+                  height=""
+              /></picture>
+            </div>
+            <div class="boxes-surface-text">
+              <h2 class="boxes-surface-heading">Surface Book 3</h2>
+              <p class="boxes-surface-subheading">
+                Il nostro portatile più potente con touchscreen da 13,5 o 15 pollici
+              </p>
+              <a href="#">
+                <span>INFORMAZIONI SU SURFACE BOOK 3</span>
+              </a>
+            </div>
+          </div>
+          <div class="boxes-surface-item">
+            <div class="boxes-surface-img">
+              <picture class="c-image"
+                ><source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Mosic_Fall_20_prox_en-us_V1.jpg?version=ff429f4d-7a62-77bc-52e7-8526e5c4245a
+                  "
+                  media="(min-width:1400px)" />
+                <source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Mosic_Fall_20_prox_en-us_V2.jpg?version=6e558777-a774-ffde-1c71-4b10336b7d7a
+                  "
+                  media="(min-width:1084px)" />
+                <source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Mosic_Fall_20_prox_en-us_V2.jpg?version=6e558777-a774-ffde-1c71-4b10336b7d7a
+                  "
+                  media="(min-width:540px)" />
+                <source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Mosic_Fall_20_prox_en-us_V3.jpg?version=6e5e57e6-c5b9-4707-d2b6-4d455d5b8640
+                  "
+                  media="(min-width:0px)" />
+                <img
+                  src="https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Mosic_Fall_20_prox_en-us_V1.jpg?version=ff429f4d-7a62-77bc-52e7-8526e5c4245a"
+                  class="mscom-image"
+                  alt="Una mano scrive con la penna Surface Slim Pen su un computer Surface Pro X"
+                  style="top: auto; height: 807px"
+                  width=""
+                  height=""
+              /></picture>
+            </div>
+            <div class="boxes-surface-text">
+              <h2 class="boxes-surface-heading">Surface Pro X</h2>
+              <p class="boxes-surface-subheading">
+                Computer portatile 2-in-1 edge-to-edge con 4G LTE e touchscreen da 13 pollici*
+              </p>
+              <a href="#">
+                <span>SCOPRI SURFACE PRO X</span>
+              </a>
+            </div>
+          </div>
+          <div class="boxes-surface-item">
+            <div class="boxes-surface-img">
+              <picture class="c-image"
+                ><source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Mosic_Spring_21_BS_Platinum_V1.jpg?version=55c6f081-4a01-c179-3f8b-2791a081ee8b
+                  "
+                  media="(min-width:1400px)" />
+                <source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Mosic_Spring_21_BS_Platinum_V2.jpg?version=00c4a54f-aa4b-8764-b514-ae8b28a8c39a
+                  "
+                  media="(min-width:1084px)" />
+                <source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Mosic_Spring_21_BS_Platinum_V2.jpg?version=00c4a54f-aa4b-8764-b514-ae8b28a8c39a
+                  "
+                  media="(min-width:540px)" />
+                <source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Mosic_Spring_21_BS_Platinum_V3.jpg?version=4899e31a-b4a1-853e-de8f-fa08dd32c493
+                  "
+                  media="(min-width:0px)" />
+                <img
+                  src="https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Mosic_Spring_21_BS_Platinum_V1.jpg?version=55c6f081-4a01-c179-3f8b-2791a081ee8b"
+                  class="mscom-image"
+                  alt="Surface Laptop 4 da 13,5 e 15 pollici:"
+                  style="top: auto; height: 807px"
+                  width=""
+                  height=""
+              /></picture>
+            </div>
+            <div class="boxes-surface-text">
+              <h2 class="boxes-surface-heading">Surface Laptop 4</h2>
+              <p class="boxes-surface-subheading">Sottile ed elegante, con touchscreen da 13,5 o 15 pollici</p>
+              <a href="#">
+                <span>Esplora Surface Laptop 4</span>
+              </a>
+            </div>
+          </div>
+          <div class="boxes-surface-item">
+            <div class="boxes-surface-img">
+              <picture class="c-image"
+                ><source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Mosic_Fall_20_Pro_7_en-us_V1.png?version=6316d187-4087-64fa-3387-9a297c177ae6
+                  "
+                  media="(min-width:1400px)" />
+                <source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Mosic_Fall_20_Pro_7_en-us_V2.png?version=6c0adf39-24f3-f078-1f7c-5024b798b7a4
+                  "
+                  media="(min-width:1084px)" />
+                <source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Mosic_Fall_20_Pro_7_en-us_V2.png?version=6c0adf39-24f3-f078-1f7c-5024b798b7a4
+                  "
+                  media="(min-width:540px)" />
+                <source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Mosic_Fall_20_Pro_7_en-us_V3.png?version=14157bd6-b05d-e807-4f81-c2e29d472128
+                  "
+                  media="(min-width:0px)" />
+                <img
+                  src="https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_Mosic_Fall_20_Pro_7_en-us_V1.png?version=6316d187-4087-64fa-3387-9a297c177ae6"
+                  class="mscom-image"
+                  alt="Surface Pro 7 nel colore Nero con una Cover con tasti Rosso papavero e visto dal retro."
+                  style="top: auto; height: 807px"
+                  width=""
+                  height=""
+              /></picture>
+            </div>
+            <div class="boxes-surface-text">
+              <h2 class="boxes-surface-heading">Surface Pro 7</h2>
+              <p class="boxes-surface-subheading">Touchscreen da 12,3 pollici con versatilità laptop/tablet*</p>
+              <a href="#">
+                <span>SCOPRI SURFACE PRO 7</span>
+              </a>
+            </div>
+          </div>
+          <div class="boxes-surface-item">
+            <div class="boxes-surface-img">
+              <picture class="c-image"
+                ><source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_HMC_HighlightFeature_Spring_Platinum_21_V1.jpg?version=86206830-9fef-f204-3be9-bf79760fc53e
+                  "
+                  media="(min-width:1400px)" />
+                <source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_HMC_HighlightFeature_Spring_Platinum_21_V2.jpg?version=0e16bd78-df53-4655-8951-884d37496fdf
+                  "
+                  media="(min-width:1084px)" />
+                <source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_HMC_HighlightFeature_Spring_Platinum_21_V3.jpg?version=7a7aa984-31ee-0dd0-1000-0b21f168f96e
+                  "
+                  media="(min-width:540px)" />
+                <source
+                  srcset="
+                    https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_HMC_HighlightFeature_Spring_Platinum_21_V4.jpg?version=fee3ac00-1674-3e97-0827-8967692092eb
+                  "
+                  media="(min-width:0px)" />
+                <img
+                  src="https://c.s-microsoft.com/it-it/CMSImages/Surface_Home_HMC_HighlightFeature_Spring_Platinum_21_V1.jpg?version=86206830-9fef-f204-3be9-bf79760fc53e"
+                  class="mscom-image"
+                  alt="L'intera famiglia di dispositivi Surface nei colori Platino e Nero."
+                  width=""
+                  height=""
+              /></picture>
+            </div>
+            <div class="boxes-surface-text">
+              <h2 class="boxes-surface-heading">Scegli il dispositivo Surface perfetto per te</h2>
+              <p class="boxes-surface-subheading">
+                Rispondi ad alcune semplici domande per individuare il dispositivo più adatto per te. Oppure confronta
+                le specifiche tecniche di ciascun computer e trova il modello Surface che rispecchia la tua originalità.
+              </p>
+              <a href="#">
+                <span>CONSIGLI PER LA SCELTA</span>
+              </a>
+              <a href="#">
+                <span>CONFRONTA I COMPUTER SURFACE</span>
+              </a>
+            </div>
+          </div>
         </section>
 
         <!-- Panel footer -->
@@ -263,8 +534,8 @@
         </section>
 
         <!-- Social Links -->
-        <section class="s6 d-flex surface-social-share justify-content-space-between align-items-center">
-          <div class="d-flex align-items-center">
+        <section class="s6 d-flex flex-wrap surface-social-share justify-content-space-between align-items-center">
+          <div class="d-flex flex-wrap align-items-center">
             <span>Segui Surface</span>
             <figure>
               <a href="https://www.facebook.com/surface">
@@ -288,7 +559,7 @@
             </figure>
           </div>
 
-          <div class="d-flex align-items-center">
+          <div class="d-flex flex-wrap align-items-center">
             <span>Condividi questa pagina</span>
             <figure>
               <a href="https://www.facebook.com/surface">
@@ -405,5 +676,6 @@
         </div>
       </div>
     </footer>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
