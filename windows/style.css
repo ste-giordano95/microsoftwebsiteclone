@@ -28,7 +28,7 @@ section:not(.hero-banner, .mosaic) {
 .banner,
 .feature {
   display: grid;
-  gap: 10px;
+  gap: 20px;
 }
 .banner {
   border: grey 1px solid;
@@ -114,6 +114,9 @@ section:not(.hero-banner, .mosaic) {
   width: 50px;
   height: 50px;
 }
+.social h3 {
+  font-weight: 400;
+}
 
 /* UTILS CLASSES*/
 .grid-col-2 {
@@ -160,7 +163,7 @@ section a {
   flex-direction: column;
   justify-content: center;
 }
-.text {
+.text:not(.tile .text) {
   padding: 0 50px;
 }
 .title {
@@ -229,6 +232,9 @@ h2 {
     width: auto;
     height: auto;
     box-shadow: none;
+  }
+  .text:not(.tile .text) {
+    padding: 0 10px;
   }
 }
 
