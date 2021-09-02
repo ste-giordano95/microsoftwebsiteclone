@@ -1,13 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Microsoft Office è parte di Microsoft365</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/utils.css">
+    <link rel="stylesheet" href="/css/office-style.css">
+    <link rel="stylesheet" href="/css/office-responsive.css">
 </head>
+
 <body>
-    
+    <header class="d-flex align-items-center">
+        <div>
+            <a href="index.html">
+
+                <img class="logo " src="assets/logo.png" alt="microsoft logo">
+            </a>
+        </div>
+        <a class="microsoft365" href="index.html">Microsoft 356</a>
+        <nav>
+            <ul class="nav-list d-flex">
+                <li><a href="">Prodotti </a><i class="fas fa-chevron-down"></i></li>
+                <li><a href="">Risorse </a><i class="fas fa-chevron-down"></i></li>
+                <li><a href="">Modelli</a></li>
+                <li><a href="">Supporto </a><i class="fas fa-chevron-down"></i></li>
+                <li><a href="">Acquista ora</a></li>
+            </ul>
+            <ul class="nav-list-short d-flex mobile">
+                <li><a href="">Altro </a><i class="fas fa-chevron-down"></i></li>
+            </ul>
+        </nav>
+        <div class="right-menu">
+            <ul class="d-flex">
+                <li>
+                    <a href="">Tutti i siti Microsoft </a>
+                    <i class="fas fa-chevron-down"></i>
+                </li>
+
+
+                <li>
+                    <a href="">Cerca </a>
+                    <i class="fas fa-search"></i>
+                </li>
+
+                <li>
+                    <a href="">Accedi </a>
+                    <i class="fas fa-user-circle"></i>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="banner1 d-flex flex-column align-items-center">
+        <picture>
+            <source srcset="/assets/office/large-w-chair.webp" type="image/webp" media="(min-width: 1700px)">
+            <source srcset="/assets/office/narrow.webp" type="image/webp"media="(max-width: 1080px)">
+            <img class="banner1-img" src="/assets/office/large-no-chair.jpg" type="image/jpeg" alt="sedia e tavolo" />
+        </picture>
+        <div class="banner1-text">
+            <h1>Se cerchi Office, sei nel posto <br> giusto</h1>
+            <p>Le app di Office che conosci e ami sono ora incluse in Microsoft 365.</p>
+        </div>
+    </section>
+    <section class="d-flex flex-column align-items-center ">
+        <div class="mid-section-text d-flex flex-column align-items-center">
+            <h3>Il tuo cloud per la produttività per il lavoro e la vita privata</h3>
+            <a href="#">Scopri quali sono i vantaggi per te <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div class="office-logos d-flex flex-wrap justify-content-space-between align-items-center">
+            <div class="d-flex flex-column align-items-center">
+                <img src="/assets/office/office-s2-img1.png" alt="">
+                <p>Word</p>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <img src="/assets/office-s2-img2.png" alt="">
+                <p>Excel</p>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <img src="/assets/office-s2-img3.png" alt="">
+                <p>PowerPoint</p>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <img src="/assets/office-s2-img4.png" alt="">
+                <p>Outlook</p>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <img src="/assets/office-s2-img5.png" alt="">
+                <p>Teams</p>
+            </div>
+            <div>
+                <p>e altre app!</p>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
