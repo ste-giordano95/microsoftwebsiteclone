@@ -1,208 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
 
-/* INIZIO HEADER */
-header {
-  width: 90%;
-  margin: 0 auto;
-  height: 54px;
-  background: white;
-  position: relative;
-  display: inline-flex;
-  padding-top: 10px;
-  padding-left: 70px;
-  padding-bottom: 0px;
-}
-
-.logo {
-padding: 14px 0px 0px 9px;
-}
-
-.logo img:only-of-type {
-  width: 110px;
-  height: 23px;
-}
-
-nav>ul {
-  padding: 0px 0px 0px 30px;
-}
-
-.menu {
-  width: 100%;
-}
-
-ul>li {
-  display: inline-block;
-  padding: 17px 18px 0px 0px;
-}
-
-a {
+*, body{
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
   color: black;
-  font-size: 13px;
-  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  /*overflow-x: hidden;*/
 }
 
-li>a:hover {
-  border-bottom: 2px solid black;
-  padding-bottom: 2px;
-}
-
-.nav-button {
-  position: absolute;
-  right: 0px;
-}
-
-li>button {
-  border: none;
-  background-color: white;
-}
-
-button>span:hover {
-  border-bottom: 2px solid black;
-  padding-bottom: 2px;
-  cursor: pointer;
-}
-
-/* FINE HEADER */
-
-/* INIZIO SECTION */
-section {
-  width: 100%;
+header{
+  font-size: 14px;
+  max-width: 1500px;
   margin: 0 auto;
-  min-height: fit-content;
+  padding: 20px;
+}
+.logo{
+  width: 115px;
+}
+.microsoft365::before{
+    border-left: 2px solid #000;
+    height: 24px;
+    content: "";
+    margin-left: 27px;
+    margin-right: 27px;
+}
+.microsoft365{
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+nav {
+  flex-grow: 1;
+}
+header li {
+  padding: 15px;
 }
 
-/*.s1 {
-  height: calc(100vh / 1 - 54px);
+.nav-list li:last-child a{
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 10px;
 }
-
-.s2 {
-  height: calc(66.666666vh / 1);
-}
-
-/* SEZIONE 1 */ 
-.s1 {
-  margin: 0;
-}       
-
-/* Testo sull'immagine della sezione 1 */
-.text-block {
-  position: absolute;
-  bottom: 55%;
-  left: 8%;
-  color: black;
-  } 
-    
-/* SEZIONE 2 */
-.s2 {
-  height: 300px;
-  width: fit-content; 
-  text-align: center;
-  align-content: center;
-  justify-content: center;
-  }
-        
-.s2>h2 {
-  padding-top: 10px;
-} 
-
-.s2>p {
- padding-bottom: 40px; 
-}
-
-.s2>p>a:hover {
- border-bottom: 2px solid blue;
- padding-bottom: 2px;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  }
-               
-.office-icon {
-    padding: 35px;
-    }
-            
-/*SEZIONE 3*/ 
-.figs3 {
- padding: 15px; /*senza questo padding manca lo spazio necessario tra una foto e l'altra) */
-}
-
-.imgs3:hover {
-    opacity: 0.9;
-} 
-
-.bluelink:hover {
-  border-bottom: 2px solid blue;
+.nav-list a:hover{
   padding-bottom: 2px;
+  border-bottom: 2px solid black;
+}
+.banner1-img{
+  max-width: 100%;
+  margin-bottom: 70px;
+}
+.banner1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.banner1-text{
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+.banner1 h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 50px;
+}
+.mid-section-text h3 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+.mid-section-text a {
+  color: #237bc1;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.mid-section-text a:hover {
+  border-bottom: 1px solid #237bc1;
+}
+
+.mid-section-text {
+  margin-bottom: 50px;
+}
+
+.office-logos img{
+  width: 75px;
+}
+ .office-logos div {
+   padding: 30px;
  }
 
-/*SEZIONE 4*/
-#faq {
-  background-color: #f0f0f0;
-}
-        
-/*SEZIONE 5*/
-.s5 {
-text-align: center;
-padding-top: 90px;
-padding-bottom: 90px;
-}
-          
-/*spazio tra le immagini della sezione 5 e il testo circostante*/ 
-.imgs5 {
-  padding-top: 20px;
-  padding-left: 100px;
-  padding-right: 100px;
-}
-/* FINE SEZIONI*/
-
-/*PULSANTI SOCIAL MEDIA prima del footer*/
-.social>ul {
-  display: inline-block;
-  padding: 0px 0px 0px 15px;
-}
-
-
-/* INIZIO FOOTER */
-
-footer {
-  width: 100%;
-  height: 400px;
-  background: #f0f0f0;
-}
-
-/* FINE FOOTER */
-
-/* INIZIO STILE GENERALE  */
-.flexbox {
-  display: flex;
-}
-
-* {
-margin: 0px;
-box-sizing: border-box;
-font-family: 'Roboto', sans-serif;
-}
-
-h1 {
-    display: block;
-    font-size: 48px;
-    margin-top: 0.67em;
-    margin-bottom: 0.67em; 
-    margin-left: 0;
-    margin-right: 0; 
-    font-weight: bolder;;
-}
-           
-h2 {
-    display: block;
-    font-size: 28px;
-    margin-top: 0.67em;
-    margin-bottom: 0.67em; 
-    margin-left: 0;
-    margin-right: 0; 
-    font-weight: bolder; 
-}
