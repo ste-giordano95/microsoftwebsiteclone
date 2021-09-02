@@ -18,6 +18,10 @@
   justify-content: center;
 }
 
+.justify-content-space-evenly {
+  justify-content: space-evenly;
+}
+
 /* .desktop {
   display: block;
 } */
